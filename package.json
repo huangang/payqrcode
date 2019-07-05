@@ -1,0 +1,19 @@
+{
+  "name": "pay-code",
+  "version": "0.0.1",
+  "description": "判断是那种付款码",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huangang/pay-code.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huangang/pay-code/issues"
+  },
+  "homepage": "https://github.com/huangang/pay-code#readme"
+}
