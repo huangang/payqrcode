@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/huangang/pay-code.git"
   },
-  "author": "",
+  "author": "huangang <huangang.zhang@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/huangang/pay-code/issues"
