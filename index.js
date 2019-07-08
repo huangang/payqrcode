@@ -40,7 +40,17 @@ class PayQrCode {
    * @param {*} code
    */
   static isBaifubao (code) {
-    return /^31\d{14,16}$/.test(code)
+    return /^31\d{16}$/.test(code)
+  }
+
+  /**
+   * 是不是QQ钱包
+   * 18位字符串，开头两位为91。该字段由商户的扫码设备，从用户的手机QQ上读取，或者是店员输入
+   * https://qpay.qq.com/buss/wiki/1/1122
+   * @param {*} code
+   */
+  static isQpay (code) {
+    return /^91\d{16}$/.test(code)
   }
 }
 
