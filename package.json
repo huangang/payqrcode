@@ -1,19 +1,19 @@
 {
-  "name": "pay-code",
+  "name": "payqrcode",
   "version": "0.0.1",
-  "description": "判断是那种付款码",
+  "description": "判断是那种付款二维码",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huangang/pay-code.git"
+    "url": "git+https://github.com/huangang/payqrcode.git"
   },
   "author": "huangang <huangang.zhang@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/huangang/pay-code/issues"
+    "url": "https://github.com/huangang/payqrcode/issues"
   },
-  "homepage": "https://github.com/huangang/pay-code#readme"
+  "homepage": "https://github.com/huangang/payqrcode#readme"
 }

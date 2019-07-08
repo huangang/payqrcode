@@ -1,6 +1,6 @@
 'use strict'
 
-class PayCode {
+class PayQrCode {
   static isNumber (num) {
     return typeof num === 'number'
   }
@@ -34,4 +34,4 @@ class PayCode {
   }
 }
 
-module.exports = PayCode
+module.exports = PayQrCode
