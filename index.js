@@ -52,6 +52,16 @@ class PayQrCode {
   static isQpay (code) {
     return /^91\d{16}$/.test(code)
   }
+
+  /**
+   * 是不是京东钱包
+   * 18开头18位付款码、62开头19位付款码
+   * https://payapi.jd.com/docList.html?methodName=4
+   * @param {*} code
+   */
+  static isJdpay (code) {
+    return /^18\d{16}$/.test(code) || /^62\d{17}$/.test(code)
+  }
 }
 
 module.exports = PayQrCode
