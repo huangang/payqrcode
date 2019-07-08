@@ -11,11 +11,7 @@ class PayCode {
    * @param {*} code
    */
   static isWeixin (code) {
-    if (!PayCode.isNumber(code)) {
-      return false
-    }
-    let top2 = code.toString().slice(0, 2) * 1
-    return top2 >= 10 && top2 <= 15
+    return /^1[012345]\d{16}$/.test(code)
   }
 
   /**
@@ -25,15 +21,7 @@ class PayCode {
    * @param {*} code
    */
   static isAlipay (code) {
-    if (!PayCode.isNumber(code)) {
-      return false
-    }
-    code = code.toString()
-    if (!(code.length >= 16 && code.length <= 25)) {
-      return false
-    }
-    let top2 = code.slice(0, 2) * 1
-    return top2 >= 25 && top2 <= 30
+    return /^(2[5-9]|30)\d{14,22}$/.test(code)
   }
 
   /**
@@ -42,15 +30,7 @@ class PayCode {
    * @param {*} code
    */
   static isUnionpay (code) {
-    if (!PayCode.isNumber(code)) {
-      return false
-    }
-    code = code.toString()
-    if (!(code.length !== 19)) {
-      return false
-    }
-    let top2 = code.slice(0, 2) * 1
-    return top2 === 62
+    return /^62\d{17}$/.test(code)
   }
 }
 
