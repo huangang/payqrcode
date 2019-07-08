@@ -23,9 +23,9 @@ test('payqrcode', (t) => {
     t.strictEqual(res, true)
   })
 
-  t.test('baifubao', t => {
+  t.test('dxmpay', t => {
     t.plan(1)
-    let res = paycode.isBaifubao(6228376427820283746)
+    let res = paycode.isDxmpay(6228376427820283746)
     t.strictEqual(res, false)
   })
 

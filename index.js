@@ -28,16 +28,17 @@ class PayQrCode {
    * @param {*} code
    */
   static isUnionpay (code) {
-    return /^62\d{17}$/.test(code)
+    // 长期观察前面3位一直是622
+    return /^622\d{16}$/.test(code)
   }
 
   /**
-   * 是不是百度钱包
+   * 是不是度小满支付(百度钱包)
    * 不超过 18 位；前缀：31
    * https://co.baifubao.com/content/resource/shop/documents/%E7%99%BE%E5%BA%A6%E9%92%B1%E5%8C%85_%E4%BB%98%E7%A0%81%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3.pdf
    * @param {*} code
    */
-  static isBaifubao (code) {
+  static isDxmpay (code) {
     return /^31\d{16}$/.test(code)
   }
 
