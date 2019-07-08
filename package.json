@@ -4,7 +4,7 @@
   "description": "判断是那种付款二维码",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap test.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/huangang/payqrcode/issues"
   },
-  "homepage": "https://github.com/huangang/payqrcode#readme"
+  "homepage": "https://github.com/huangang/payqrcode#readme",
+  "devDependencies": {
+    "tap": "^14.4.1"
+  }
 }

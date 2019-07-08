@@ -1,9 +1,6 @@
 'use strict'
 
 class PayQrCode {
-  static isNumber (num) {
-    return typeof num === 'number'
-  }
   /**
    * 是不是微信支付付款码
    * https://pay.weixin.qq.com/wiki/doc/api/micropay_sl.php?chapter=5_1
@@ -27,6 +24,7 @@ class PayQrCode {
   /**
    * 是不是云闪付付款码
    * 62 前缀+2位(主产品标识)+15位随机数
+   * https://open.unionpay.com/ijweb/product/detail?id=181
    * @param {*} code
    */
   static isUnionpay (code) {
