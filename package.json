@@ -1,6 +1,6 @@
 {
   "name": "payqrcode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "判断是那种付款二维码",
   "main": "index.js",
   "scripts": {
